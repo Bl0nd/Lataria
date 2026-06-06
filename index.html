@@ -4,104 +4,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Irmãos da Lataria</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Irmãos da Lataria | Precisão Automotiva</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-
-    <header>
-        <h1>Irmãos da Lataria</h1>
-        <p>Qualidade e confiança no seu carro</p>
+    <header class="cabecalhoPrincipal">
+        <div class="containerCabecalho">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Irmãos da Lataria" class="logoImagem">
+            </div>
+            <nav class="menuNavegacao">
+                <a href="#">Home</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
-    <section class="banner">
-        <h2>Seu carro como novo novamente</h2>
-    </section>
-
-    <section class="sobre">
-        <h2>Sobre Nós</h2>
-
-        <div class="about">
-            <p>
-                A <strong>Irmãos da Lataria</strong> nasceu da paixão de dois irmãos por carros e tudo
-                que envolve o cuidado e a estética automotiva. Desde cedo, sempre estiveram
-                envolvidos com veículos, aprendendo na prática cada detalhe da funilaria e pintura.
-            </p>
-
-            <p>
-                Mais do que um trabalho, cuidar de carros é algo que faz parte da nossa história.
-                Cada serviço realizado é tratado com atenção, dedicação e respeito, como se fosse
-                no nosso próprio veículo.
-            </p>
-
-            <p>
-                Nosso objetivo é devolver não apenas a aparência original do carro, mas também a
-                satisfação e a confiança de quem confia no nosso trabalho.
-            </p>
-
-            <p>
-                Aqui, você encontra um atendimento próximo, transparente e feito por quem realmente
-                ama o que faz.
-            </p>
+    <section class="secaoBanner">
+        <div class="mascaraBanner"></div>
+        <div class="conteudoBanner">
+            <span class="subtituloBanner">Excelência Automotiva</span>
+            <h1 class="tituloBanner">Precisão em<br><span class="textoVermelho">cada detalhe</span></h1>
+            <p class="descricaoBanner">Especialistas em funilaria de alto padrão e pintura técnica. Restauramos a alma
+                do seu veículo com o rigor de uma linha de montagem.</p>
+            <a href="#contato" class="botaoPrincipal">Falar com Especialista</a>
         </div>
     </section>
 
-    <section class="servicos">
-        <h2>Serviços</h2>
-
-        <div class="servico">
-            <div class="card">
-                <h3>Funilaria</h3>
-                <p>Reparo de lataria com foco em manter a estrutura e linhas originais do veículo.</p>
+    <section id="sobre" class="secaoSobre">
+        <div class="containerSobre">
+            <div class="textoSobre">
+                <span class="subtituloSecao">Nossa História</span>
+                <h2 class="tituloSecao">Sobre Nós</h2>
+                <p>A <strong>Irmãos da Lataria</strong> nasceu da paixão de dois irmãos por carros e tudo que envolve o
+                    cuidado e a estética automotiva...</p>
+                <p>Mais do que um trabalho, cuidar de carros é algo que faz parte da nossa história. Cada serviço
+                    realizado é tratado com atenção, dedicação e respeito.</p>
+                <p class="textoDestque">Aqui, você encontra um atendimento próximo, transparente e feito por quem
+                    realmente ama o que faz.</p>
             </div>
-
-            <div class="card">
-                <h3>Pintura</h3>
-                <p>Recuperação completa de veículos clássicos, preservando a história de cada detalhe.</p>
-            </div>
-
-            <div class="card">
-                <h3>Polimento</h3>
-                <p>Tratamento de superfície e finalização com padrões de alto brilho e durabilidade.</p>
+            <div class="imagemSobreContainer">
+                <div class="efeitoBordaImagem"></div>
+                <img src="img/oficina.png" alt="Oficina Irmãos da Lataria" class="imagemEspaco">
             </div>
         </div>
     </section>
 
-    <section class="galeria">
-        <h3>Galeria de Projetos</h3>
-        <p>Nosso padrão de acabamento em cada detalhe.</p>
-
-        <div class="carousel">
-            <img src="img/car1.jpg" alt="Projeto 1" />
-            <img src="img/car2.jpg" alt="Projeto 2" />
-            <img src="img/car3.jpg" alt="Projeto 3" />
-            <img src="img/car4.jpg" alt="Projeto 4" />
-            <img src="img/car5.jpg" alt="Projeto 5" />
-            <img src="img/car6.jpg" alt="Projeto 6" />
+    <section id="servicos" class="secaoServicos">
+        <div class="containerServicos">
+            <div class="topoServicos">
+                <h2 class="tituloSecao">Nossos Serviços</h2>
+                <p class="resumoServicos">Utilizamos tecnologia de ponta e insumos premium para garantir um acabamento
+                    impecável em cada projeto.</p>
+            </div>
+            <div class="gradeServicos">
+                <div class="cardServico">
+                    <span class="material-symbols-outlined iconeCard">car_repair</span>
+                    <h3>Funilaria</h3>
+                    <p>Reparação estrutural com gabaritos de precisão. Recuperamos a geometria original do seu carro.
+                    </p>
+                </div>
+                <div class="cardServico">
+                    <span class="material-symbols-outlined iconeCard">format_paint</span>
+                    <h3>Pintura</h3>
+                    <p>Laboratório próprio para acerto de cores e cabine de pintura pressurizada com garantia de
+                        durabilidade.</p>
+                </div>
+                <div class="cardServico">
+                    <span class="material-symbols-outlined iconeCard">flare</span>
+                    <h3>Polimento</h3>
+                    <p>Detalhamento técnico e proteção cerâmica. Remoção de riscos e restauração do brilho profundo.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="contato">
-        <h2>Contato</h2>
-        <p></p>
-        <p></p>
-        <p></p>
+    <section class="secaoProgresso">
+        <div class="containerProgresso">
+            <div class="infoProgresso">
+                <h3 class="subtituloSecao">Nosso Rigor</h3>
+                <h2 class="tituloSecao">Progresso Técnico</h2>
+                <div class="grupoIndicadores">
+
+                    <div class="itemIndicador">
+                        <div class="legendasIndicador">
+                            <span>Precisão de Alinhamento</span>
+                            <span class="valorIndicador">99.8%</span>
+                        </div>
+                        <div class="barraProgresso">
+                            <div class="preenchimentoProgresso" style="width: 99.8%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="itemIndicador">
+                        <div class="legendasIndicador">
+                            <span>Fidelidade Cromática</span>
+                            <span class="valorIndicador">100%</span>
+                        </div>
+                        <div class="barraProgresso">
+                            <div class="preenchimentoProgresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="itemIndicador">
+                        <div class="legendasIndicador">
+                            <span>Nível de Brilho (Nível Espelho)</span>
+                            <span class="valorIndicador">95%</span>
+                        </div>
+                        <div class="barraProgresso">
+                            <div class="preenchimentoProgresso" style="width: 95%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="imagemProgressoContainer">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSFwrfhwzSA2WIuZouUu9MVko_bunewoa8egbFoPf-aH6YTHCncxkfmrgxM23kx8duBvAZqf91dI9i1wcluDIycY39z0x8xlLOrQ-z2R-VsZ4IFuaYA_bQfPbnjPE5CdyXsiDuGbKRQNYM_O0WXs-gw9cnSy40Oy4I-3k1s6oEJ9mmmFSY5ImETL6va4nyiIMQGqZmaz_rrpZ-5FpjUa6t50HZ7MGHW_PNAeoR--R5mKJsbLCMkmVYflJW5nWDC1rwcZroNYIpG_g"
+                    alt="Diagnóstico de Precisão" class="imagemEspaco proporcaoVideo">
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="secaoChamada">
+        <div class="caixaChamada">
+            <h2>Pronto para transformar seu veículo?</h2>
+            <p>Solicite um orçamento técnico hoje mesmo e descubra o padrão de excelência Irmãos da Lataria.</p>
+            <button id="botaoOrcamento" class="botaoPrincipal">Iniciar Orçamento</button>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Funilaria Rápida - Todos os direitos reservados</p>
+        <p>&copy; 2026 Irmãos da Lataria - Precisão Automotiva. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
