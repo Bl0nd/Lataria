@@ -5,65 +5,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Irmãos da Lataria</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Sobre Nós | IRMÃOS DA LATARIA</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Irmãos da Lataria</h1>
-        <p>Qualidade e confiança no seu carro</p>
+    <header class="cabecalhoPrincipal">
+        <div class="containerCabecalho">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Irmãos da Lataria" class="logoImagem">
+            </div>
+            <nav class="menuNavegacao">
+                <a href="index.html">Inicio</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="servicos.html">Serviços</a>
+                <a href="contato.html">Contato</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Início</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#contato">Contato</a>
-    </nav>
-
     <section class="intro">
-        <!-- Quem Somos -->
-        <h2>Quem Somos</h2>
-        <p>Mais do que funilaria, somos especialistas em restaurar o orgulho de dirigir. A <strong>Irmãos da
-                Lataria</strong> nasceu da união entre a paixão automotiva e o compromisso técnico com a perfeição
-            emcada detalhe.</p>
-
-        <div class="historia">
-            <!-- Nossa História -->
-            <h2>Nossa História</h2>
-            <p>
-                Tudo começou nas mãos de dois irmãos dedicados a transformar lataria em arte. Com anos de estrada e
-                experiência acumulada, decidimos profissionalizar nosso atendimento para oferecer um padrão de
-                restauração que vai além do convencional. Crescemos baseados em três pilares: transparência total,
-                qualidade técnica de ponta e o cumprimento rigoroso dos prazos que prometemos aos nossos clientes.
-            </p>
-
-            <div class="diferencial">
-                <h3>Por que nos escolher?</h3>
-                <ul>
-                    <li><strong>Precisão Técnica:</strong> Equipamentos modernos que garantem o melhor acabamento.</li>
-                    <li><strong>Transparência:</strong> Orçamentos detalhados e sem surpresas.</li>
-                    <li><strong>Garantia Real:</strong> Compromisso com a durabilidade e o resultado final do seu
-                        veículo.</li>
-                </ul>
+        <div class="banner">
+            <img alt="Irmãos da Lataria"
+                src="https://lh3.googleusercontent.com/aida/AP1WRLu-vq-E6eg9jfzU1sLDEojjEt6Y26cIkz78LxitPlTjC2yNDOIZuF2odVggiTTOzxrGLpgOxp8tLxDHLIB9JABlpNp2Uq4-oJpTYbQUZyA0THthz5xPEQOvkw2F6kaYPlE1-_FcsLbqJ-fIBy3gA5TzCWsKsPTlbxzj0mabPDRw-gwq9B8TD11SCoQKmOjFSWzIR4WxW4Qb-NPiikEVEfb9Fm4xXqxhO4qY6BX88ch1As0RzaQeL5eqv94">
+            <div class="filtro"></div>
+        </div>
+        <div class="containerS">
+            <div class="conteudo">
+                <span class="heranca">Nossa Herança</span>
+                <h2>DOIS IRMÃOS, UMA ÚNICA OBSESSÃO: A PERFEIÇÃO.</h2>
+                <p>
+                    Nascidos entre o cheiro de tinta e o som das ferramentas, transformamos a oficina da
+                    família em um centro de referência em restauração e precisão automotiva.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="contato">
-        <h2>Contato</h2>
-        <p></p>
-        <p></p>
-        <p></p>
+    <section class="historia">
+        <div class="container">
+            <div class="nossahistoria">
+                <div>
+                    <div class="resumo">
+                        <h2>Quem Somos</h2>
+                        <p>
+                            Na <span>Irmãos da Lataria</span>,
+                            transformamos a paixão por automóveis em um padrão de excelência técnica
+                            inquestionável, unindo tradição e inovação.
+                        </p>
+                    </div>
+                    <div class="origem">
+                        <h3>Nossa História</h3>
+                        <p>
+                            Nossa jornada começou na oficina da família, onde aprendemos que cada detalhe
+                            importa. Hoje, os pilares de precisão e dedicação guiam cada restauração,
+                            garantindo que a alma de cada máquina seja preservada com perfeição.
+                        </p>
+                    </div>
+                    <div class="blocos">
+                        <div class="item">
+                            <span class="icones">settings_suggest</span>
+                            <div>
+                                <h4>Precisão Técnica</h4>
+                                <p>Equipamentos de última geração.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="icones">visibility</span>
+                            <div>
+                                <h4>Transparência</h4>
+                                <p>Acompanhamento real do processo.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="icones">verified_user</span>
+                            <div>
+                                <h4>Garantia Real</h4>
+                                <p>Compromisso com a durabilidade.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <span class="icones">handyman</span>
+                            <div>
+                                <h4>Mão de Obra</h4>
+                                <p>Especialistas em restauração.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="midia">
+                    <div class="borda moldura">
+                        <img src="https://lh3.googleusercontent.com/aida/AP1WRLvXN8yIAovX1AiLfvu_w9ypVwc9w71TdGV7Qr_klxkV11WuELkNVXwTnFPpXo9Oaj1CZyCkO-HHzdP5u9M0ZRNvO2Cz-V9KHSgaGR6GZ9hWAE0C0JjtD3952aSRm5WonM7HXXd1oEXwWeP2wJwE6P_fazzQoqhB-BCM-_eFUL3HqXfnmA_TEzsfY-XLXpUGtyEET3N9PuTOf37hQJWmxcL1yDkcXNM5QOps7VvezXFkeb-LPOsPEhEQl6k"
+                            alt="Oficina de Alta Performance">
+                        <div class="sombra"></div>
+                        <div class="depoimento">
+                            <div class="caixa borda">
+                                <p>
+                                    "Não entregamos carros. Devolvemos a alma de uma máquina em seu estado de glória."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pilares">
+        <div class="container">
+            <div class="titulo">
+                <h3>Nossos Pilares Fundamentais</h3>
+            </div>
+            <div class="linhas">
+                <div class="card borda">
+                    <span class="icones">biotech</span>
+                    <h4>Exatidão</h4>
+                    <p>Cada medição é feita com tecnologia laser. Cada grama de tinta é pesada eletronicamente. A margem
+                        de erro não existe em nosso vocabulário técnico.</p>
+                </div>
+
+                <div class="card borda">
+                    <span class="icones">favorite</span>
+                    <h4>Paixão Automotiva</h4>
+                    <p>Não é apenas trabalho; é nossa vida. Respiramos o mundo automotivo e tratamos cada veículo como
+                        se fosse o nosso próprio projeto de competição.</p>
+                </div>
+
+                <div class="card borda">
+                    <span class="icones">handshake</span>
+                    <h4>Integridade</h4>
+                    <p>Transparência total em cada etapa do processo. Sem atalhos, sem peças de segunda linha, apenas a
+                        verdade e a qualidade absoluta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="infraestrutura">
+        <div class="containerinfra">
+            <div class="infra">
+                <div class="galeria">
+                    <div class="borda">
+                        <img alt="Cabine de pintura"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk7xkYyZ6LEGEE37qqJHrHciFqWKh1SGPwtCH3-2emdEO5Wdi6wXl50ahvX3sOWdDHo50bth8hZ6PNGYRm0shxjad1sgBAtDtCBBGjC3lcIMAqiIdJV2n24BMgcGN-D0CNVgvmxKCeggZ_kGL5QQHd_zCyauXm940Vyg2mH1vMC6GQYddJ1kyw837jo1LfjXF3Lofz_lbliVjVf8NI2qpo7efuype9lLNB8zJG643az5nkSGCiST3xMc69MSIW4sQ4Gec1u--tDzE">
+                    </div>
+                    <div class="borda">
+                        <img class="fundo" alt="Ferramentas"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi6VIDV3U-QfL5E6a8xSVRoEMX1If1uCK20hG4UoYV0X_kZM8XCb5Wmw1IT7_gtdUBnin3eZiaiolyYJ8pwIH3RxNeYE4ur_4NDidQnCl7DyZOpb4H1nKOwep1Qf-eaObasJ-asgOwmmIAPuq4yfgVsIO0CLYoJvDQTT_iba8H6Uw7CofnfirKNt_aWKkFYNX2JUmCsZl-WmbPZBoygEL4J9M9LZHMkkfOZKqVrnbcqgo1EgQEsWKLaItISQda_yBDjS1EbBPXj5k">
+                    </div>
+                    <div class="borda">
+                        <img alt="Elevadores"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaMhc-u6lt214MswtgmNEkbSrk0zfPsOdUhCPw8cdz73OUz71Wz0SuT5xuWKfzHLtSxlJsk_UUfcHUNw9CbEljZOBWcA-hMnBAGvac9hJWBo_ZzFxKy4fPiUfXtMraPNyy9h1TQDh738NsIRMz15z0RoqHQk8sDjGlbZDTEZI5pOMCoV4UMQD-Tb3yGCMdVkPVr-z8uX2pPJGr0CB82Nbuas5qjcp4eZO08NwQLszf_CFVabXIEttNr--OmRX49pVGI-SdFmfsxWI">
+                    </div>
+                    <div class="borda">
+                        <img alt="Alinhamento"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyFiuqeyWbTDQlRdsAFPXR1hUcjnIg1vyFuuwKcIfw2tQbiY2XhD58jFIXHhVCbnMifaXhvlbAtxec2lvOLjMa57I2AUjWqMkTfDZvdKuJq-18CdKw6fxyvduOG5AkQaTHibN0qLh24TWrydLlMYWfFDhGpQIJO4BZQHTxokBqijAJ3y8ILRmqV3IgGEQPZwylnNX1Uxh_J-pZGFezln2pJQpt2AbAEg6PHGce_FG7sLDBRCzA_gcc6Y9kLgtbfcdpT5HCjJvQZ6Q">
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Infraestrutura e Alto Padrão</h3>
+                    <p class="descricao">Nossa oficina foi projetada para ser um templo da técnica. Investimos em
+                        laboratórios de colorimetria próprios, cabines de pintura com fluxo laminar e sistemas de
+                        alinhamento de chassi computadorizados.</p>
+                    <ul class="lista">
+                        <li>
+                            <span class="icones">check_circle</span>
+                            <div>
+                                <h5>Laboratório de Cores PPG</h5>
+                                <p>Fidelidade absoluta ao catálogo original de qualquer montadora mundial.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icones">check_circle</span>
+                            <div>
+                                <h5>Ciborgue e Estiramento a Laser</h5>
+                                <p>Recuperação estrutural com precisão milimétrica garantida por sensores digitais.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="icones">check_circle</span>
+                            <div>
+                                <h5>Ambiente Controlado</h5>
+                                <p>Filtragem de ar HEPA para garantir acabamento espelhado livre de impurezas.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="agendar">
+                        <button id="botaoAgendar">Agende uma Visita Técnica</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2026 Funilaria Rápida - Todos os direitos reservados</p>
+        <p>© 2026 Irmãos da Lataria - Precisão Automotiva. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="main.js" defer></script>
 </body>
 
 </html>
