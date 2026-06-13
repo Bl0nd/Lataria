@@ -22,8 +22,8 @@ footer {
   color: #666;
 }
 
-/*#region pag home */
-.cabecalhoPrincipal {
+/* #region header */
+.principal {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@ footer {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 }
 
-.containerCabecalho {
+.comeco {
   width: 1200px;
   margin: 0 auto;
   padding: 30px 0 15px 0;
@@ -54,12 +54,12 @@ footer {
   object-fit: contain;
 }
 
-.menuNavegacao {
+.menu {
   display: flex;
   justify-content: center;
 }
 
-.menuNavegacao a {
+.menu a {
   color: #A0A0A0;
   text-decoration: none;
   text-transform: uppercase;
@@ -69,11 +69,13 @@ footer {
   transition: color 0.3s;
 }
 
-.menuNavegacao a:hover {
+.menu a:hover {
   color: #FFFFFF;
 }
 
-/* banner */
+/* #endregion header */
+
+/*#region pag home */
 .secaoBanner {
   position: relative;
   height: 100vh;
@@ -774,6 +776,118 @@ footer {
 .infraestrutura .agendar button:active {
   transform: scale(0.98);
 }
+/* horario de funcionamento */
+.funcionamento {
+  padding: 20px 10% 60px 10%;
+  background-color: #0b0b0b;
+}
+
+.infoFuncionamento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.cadInfo h2,
+.endereco h2 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1c1c1e;
+  padding-bottom: 15px;
+}
+
+.cadInfo h2 span,
+.endereco h2 span {
+  color: #ff3b30;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoHorario {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #1c1c1e;
+  padding-bottom: 8px;
+}
+
+.infoHorario span:first-child {
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.infoHorario span:last-child {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.infoHorario:last-child span:last-child {
+  color: #ff3b30;
+}
+
+.localizacao {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #1c1c1e;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.imgLocalizacao {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) grayscale(0.5);
+}
+
+.localizacao div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 59, 48, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff3b30;
+}
+
+.localizacao div span {
+  color: #ff3b30;
+  font-size: 1.8rem;
+}
+
+.infoEndereco {
+  font-style: normal;
+}
+
+.infoEndereco p:first-child {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.infoEndereco p:last-child {
+  color: #999999;
+  margin: 0;
+  font-size: 0.9rem;
+}
 
 /* #endregion pag sobre */
 
@@ -1268,7 +1382,8 @@ footer {
   color: #ffffff;
   border-radius: 50%;
   display: flex;
-  align-items: center;  justify-content: center;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   z-index: 10;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -1383,48 +1498,6 @@ footer {
 }
 
 /* #endregion pag serviços */
-
-/* #region contato */
-.contato form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  background: #f9f9f9;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-}
-
-.contato input,
-.contato textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 100%;
-}
-
-.contato button {
-  padding: 12px;
-  background: #e67e22;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contato button:hover {
-  background: #d35400;
-}
-
-.map {
-  margin-top: 20px;
-  overflow: hidden;
-  border-radius: 8px;
-}
-
-/* #endregion contato */
 
 /* #region footer */
 .contato {
