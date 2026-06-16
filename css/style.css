@@ -13,14 +13,6 @@ h3,
   font-family: 'Montserrat', sans-serif;
 }
 
-footer {
-  background-color: #000000;
-  padding: 40px 0;
-  text-align: center;
-  border-top: 1px solid #262626;
-  font-size: 12px;
-  color: #666;
-}
 
 /* #region header */
 .principal {
@@ -74,6 +66,25 @@ footer {
 }
 
 /* #endregion header */
+
+/* #region footer */
+.contato {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+footer {
+  background-color: #000000;
+  padding: 40px 0;
+  text-align: center;
+  border-top: 1px solid #262626;
+  font-size: 12px;
+  color: #666;
+}
+
+/* #endregion footer */
 
 /*#region pag home */
 .secaoBanner {
@@ -776,6 +787,7 @@ footer {
 .infraestrutura .agendar button:active {
   transform: scale(0.98);
 }
+
 /* horario de funcionamento */
 .funcionamento {
   padding: 20px 10% 60px 10%;
@@ -1499,20 +1511,6 @@ footer {
 
 /* #endregion pag serviços */
 
-/* #region footer */
-.contato {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 30px;
-}
+/* #region pag contato */
 
-footer {
-  background-color: #222;
-  color: #aaa;
-  text-align: center;
-  padding: 15px;
-  font-size: 14px;
-}
-
-/* #endregion footer */
+/* #endregion pag contato */
