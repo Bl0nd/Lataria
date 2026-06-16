@@ -15,54 +15,100 @@ h3,
 
 
 /* #region header */
-.principal {
-  position: absolute;
+header {
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+  height: 140px;
+  z-index: 9999;
+  background-color: #0d0d0d;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 
 .comeco {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 30px 0 15px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-}
-
-.logoImagem {
-  height: 160px;
-  width: auto;
-  display: block;
-  object-fit: contain;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .menu {
   display: flex;
+  align-items: center;
   justify-content: center;
+  width: 100%;
+  gap: 50px;
 }
 
 .menu a {
-  color: #A0A0A0;
+  font-family: 'Montserrat', sans-serif;
+  color: #aaaaaa;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: 13px;
-  font-weight: 500;
-  margin: 0 20px;
-  transition: color 0.3s;
+  letter-spacing: 1.5px;
+  padding: 10px 0;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 120px;
+  flex-shrink: 0;
+  margin: 0 15px;
+  order: 3;
+}
+
+.logoImg {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: contain;
+  display: block;
+}
+
+.menu a[href="index.html"] {
+  order: 1;
+}
+
+.menu a[href="sobre.html"] {
+  order: 2;
+}
+
+.menu a[href="servicos.html"] {
+  order: 4;
+}
+
+.menu a[href="contato.html"] {
+  order: 5;
 }
 
 .menu a:hover {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #e53935;
+  transition: width 0.2s ease;
+}
+
+.menu a:hover::after {
+  width: 100%;
 }
 
 /* #endregion header */
@@ -440,11 +486,13 @@ footer {
 /* ---Intro --- */
 .intro {
   position: relative;
-  padding-top: 70px;
-  height: 80vh;
-  min-height: 500px;
+  margin-top: 140px;
+  height: calc(90vh - 140px);
+  min-height: 580px;
   display: flex;
   align-items: flex-end;
+  padding-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .banner {
@@ -458,8 +506,10 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 22%;
   filter: brightness(0.4) grayscale(0.2);
 }
+
 
 .filtro {
   position: absolute;
@@ -786,119 +836,6 @@ footer {
 
 .infraestrutura .agendar button:active {
   transform: scale(0.98);
-}
-
-/* horario de funcionamento */
-.funcionamento {
-  padding: 20px 10% 60px 10%;
-  background-color: #0b0b0b;
-}
-
-.infoFuncionamento {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 60px;
-}
-
-.cadInfo h2,
-.endereco h2 {
-  font-size: 1.3rem;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #1c1c1e;
-  padding-bottom: 15px;
-}
-
-.cadInfo h2 span,
-.endereco h2 span {
-  color: #ff3b30;
-  font-size: 1.6rem;
-  vertical-align: middle;
-}
-
-.horario {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.infoHorario {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.95rem;
-  border-bottom: 1px dashed #1c1c1e;
-  padding-bottom: 8px;
-}
-
-.infoHorario span:first-child {
-  color: #999999;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.infoHorario span:last-child {
-  color: #ffffff;
-  font-weight: bold;
-}
-
-.infoHorario:last-child span:last-child {
-  color: #ff3b30;
-}
-
-.localizacao {
-  position: relative;
-  width: 100%;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid #1c1c1e;
-  height: 180px;
-  margin-bottom: 15px;
-}
-
-.imgLocalizacao {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.6) grayscale(0.5);
-}
-
-.localizacao div {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 59, 48, 0.2);
-  padding: 10px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #ff3b30;
-}
-
-.localizacao div span {
-  color: #ff3b30;
-  font-size: 1.8rem;
-}
-
-.infoEndereco {
-  font-style: normal;
-}
-
-.infoEndereco p:first-child {
-  color: #ffffff;
-  font-weight: bold;
-  margin: 0 0 5px 0;
-  font-size: 1rem;
-}
-
-.infoEndereco p:last-child {
-  color: #999999;
-  margin: 0;
-  font-size: 0.9rem;
 }
 
 /* #endregion pag sobre */
@@ -1512,5 +1449,350 @@ footer {
 /* #endregion pag serviços */
 
 /* #region pag contato */
+
+.bannerContato {
+  position: relative;
+  height: 55vh;
+  min-height: 450px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 60px;
+  overflow: hidden;
+  background-color: #131313;
+}
+
+.bannerContato img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  filter: brightness(0.55) contrast(1.05);
+}
+
+.bannerContato::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(19, 19, 19, 0.85) 0%, rgba(19, 19, 19, 0.2) 100%);
+  z-index: 1;
+}
+
+.cardContato {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.infoContato {
+  max-width: 600px;
+}
+
+.infoContato h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  letter-spacing: 0px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.infoContato h3::before {
+  content: '';
+  display: inline-block;
+  width: 35px;
+  height: 3px;
+  background-color: #e53935;
+}
+
+.infoContato p {
+  color: #cccccc;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.formContato {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  background-color: #161616;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+}
+
+.formContato h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0 0 35px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+}
+
+.formContato h2 span {
+  font-family: 'Material Symbols Outlined';
+  color: #e53935;
+  font-size: 26px;
+}
+
+.nome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.space-y-2,
+.marca,
+.mens {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mens {
+  margin-bottom: 35px;
+}
+
+.formContato label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #aaaaaa;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.formContato input,
+.formContato textarea {
+  background-color: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  padding: 14px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formContato input::placeholder,
+.formContato textarea::placeholder {
+  color: #555555;
+}
+
+.formContato input:focus,
+.formContato textarea:focus {
+  outline: none;
+  border-color: #e53935;
+  box-shadow: 0 0 8px rgba(229, 57, 53, 0.15);
+}
+
+.whats {
+  background-color: #111111;
+  padding: 25px;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.whats:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.svg-whats {
+  width: 32px;
+  height: 32px;
+  fill: #009b12;
+  margin-bottom: 12px;
+  transition: transform 0.2s ease;
+}
+
+.whats:hover .svg-whats {
+  transform: scale(1.05);
+}
+
+.whats p:first-of-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  color: #06781f;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin: 0 0 4px 0;
+}
+
+.whats p:last-of-type {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.localizacao {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 100px 20px;
+  text-align: center;
+}
+
+.localizacao h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  color: #ffffff;
+}
+
+.localizacao h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #e53935;
+  margin: 15px auto 0 auto;
+}
+
+.localizacao p {
+  color: #aaaaaa;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* horario de funcionamento */
+.funcionamento {
+  padding: 20px 10% 60px 10%;
+  background-color: #0b0b0b;
+}
+
+.infoFuncionamento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+.cadInfo h2,
+.endereco h2 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #1c1c1e;
+  padding-bottom: 15px;
+}
+
+.cadInfo h2 span,
+.endereco h2 span {
+  color: #ff3b30;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+.horario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoHorario {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95rem;
+  border-bottom: 1px dashed #1c1c1e;
+  padding-bottom: 8px;
+}
+
+.infoHorario span:first-child {
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.infoHorario span:last-child {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.infoHorario:last-child span:last-child {
+  color: #ff3b30;
+}
+
+.localizacao {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #1c1c1e;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+.imgLocalizacao {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6) grayscale(0.5);
+}
+
+.localizacao div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 59, 48, 0.2);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ff3b30;
+}
+
+.localizacao div span {
+  color: #ff3b30;
+  font-size: 1.8rem;
+}
+
+.infoEndereco {
+  font-style: normal;
+}
+
+.infoEndereco p:first-child {
+  color: #ffffff;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  font-size: 1rem;
+}
+
+.infoEndereco p:last-child {
+  color: #999999;
+  margin: 0;
+  font-size: 0.9rem;
+}
 
 /* #endregion pag contato */
